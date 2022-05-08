@@ -1,0 +1,13 @@
+{"data":[
+    {
+        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi"],
+        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?"],
+        "intent": ["greetings"]
+    },
+
+    {
+        "questionText": ["Goodybye", "Seeya", "Bye", "Later"],
+        "answerText": ["I'm going now, bye", "Bye", "Goodbye", "Later"],
+        "intent": ["greetings"]
+    }
+]}
