@@ -1,7 +1,7 @@
 {"data":[
     {
-        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up"],
-        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?"],
+        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up", "Hey"],
+        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?", "Hey"],
         "intent": "greetings"
     },
 
@@ -12,9 +12,39 @@
     },
 
     {
-        "questionText": ["I had a bad day", "Not good", "Pretty bad"], 
+        "questionText": ["I had a bad day", "Not good", "Pretty bad", "Feeling depressed", "Feeling down", "Feeling bad"], 
         "answerText": ["What's wrong?", "What's going on?"], 
         "intent": "feeling bad"
+    },
+
+    {
+        "questionText": ["I'm feeling lonely", "I don't have anybody to talk with recently", "I don't know who to talk too"], 
+        "answerText": ["If you are having trouble making freinds or talking with someone you can try meeting people online."], 
+        "intent": "lonely"
+    },
+
+    {
+        "questionText": ["I got into an arguement with my friend and I don't know how too talk with tehm about it"], 
+        "answerText": ["You should make amends and try talking it out."], 
+        "intent": "arguement"
+    },
+
+    {
+        "questionText": ["I'm feeling depressed", "I feel my depression is at a all time low"], 
+        "answerText": ["If you haven't already you should try seeking professional help and talk with someone you feel comfortbale with."], 
+        "intent": "depression"
+    },
+
+    {
+        "questionText": ["I get nervous around people easily", "It's hard for me too make eye contact with people", "I get sweaty and nervous when talking to people"], 
+        "answerText": ["incomplete"], 
+        "intent": "nervous"
+    },
+
+    {
+        "questionText": ["I need help making friends", "How should I talk to people?"], 
+        "answerText": ["Talking with people for the first time can be hard, but you should try "],
+        "intent": "making friends"
     },
 
     {
