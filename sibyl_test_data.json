@@ -6,45 +6,57 @@
     },
 
     {
-        "questionText": ["My day was pretty good today!", "I had a good day today", "Doing good", "Great"],
+        "questionText": ["What is your purpose?", "What do you do?", "Who are you", "What can you do?", "What are you?"],
+        "answerText": ["I am Sibyl, a chatbot created with the purpose to answer questions about Social Anxiety Disorder. I can also be something that you can talk too if you are struggling with anything, but I can't gaurantee my advice will help your situation specifcally."],
+        "intent": "purpose"
+    },
+
+    {
+        "questionText": ["My day was pretty good today!", "I had a good day today", "Doing good", "Great", "Good", "Pretty great"],
         "answerText": ["That's good to here", "That's great!"],
         "intent": "feeling good"
     },
 
     {
-        "questionText": ["I had a bad day", "Not good", "Pretty bad", "Feeling depressed", "Feeling down", "Feeling bad"], 
-        "answerText": ["What's wrong?", "What's going on?"], 
+        "questionText": ["I had a bad day", "Not good", "Pretty bad", "Feeling down", "Feeling bad", "Bad"],
+        "answerText": ["What's wrong?", "What's going on?"],
         "intent": "feeling bad"
     },
 
     {
-        "questionText": ["I'm feeling lonely", "I don't have anybody to talk with recently", "I don't know who to talk too"], 
-        "answerText": ["If you are having trouble making freinds or talking with someone you can try meeting people online."], 
+        "questionText": ["I'm feeling lonely", "I don't have anybody to talk with recently", "I don't know who to talk too"],
+        "answerText": ["If you are having trouble making freinds or talking with someone you can try meeting people online."],
         "intent": "lonely"
     },
 
     {
-        "questionText": ["I got into an arguement with my friend and I don't know how too talk with tehm about it"], 
-        "answerText": ["You should make amends and try talking it out."], 
-        "intent": "arguement"
+        "questionText": ["I got into an argument with my friend and I don't know how too talk with them about it", "I got in a dumb fight with a friend"],
+        "answerText": ["You should make amends and try talking it out."],
+        "intent": "argument"
     },
 
     {
-        "questionText": ["I'm feeling depressed", "I feel my depression is at a all time low"], 
-        "answerText": ["If you haven't already you should try seeking professional help and talk with someone you feel comfortbale with."], 
+        "questionText": ["I'm feeling depressed", "I feel my depression is at a all time low", "Kinda depressed"],
+        "answerText": ["If you haven't already you should try seeking professional help and talk with someone you feel comfortbale with.", "I don't know exactly what is going on in your life, but I think its good too express your feelings to someone."],
         "intent": "depression"
     },
 
     {
-        "questionText": ["I get nervous around people easily", "It's hard for me too make eye contact with people", "I get sweaty and nervous when talking to people"], 
-        "answerText": ["incomplete"], 
+        "questionText": ["I get nervous around people easily", "It's hard for me too make eye contact with people", "I get sweaty and nervous when talking to people"],
+        "answerText": ["incomplete"],
         "intent": "nervous"
     },
 
     {
-        "questionText": ["I need help making friends", "How should I talk to people?"], 
+        "questionText": ["I need help making friends", "How should I talk to people?"],
         "answerText": ["Talking with people for the first time can be hard, but you should try "],
         "intent": "making friends"
+    },
+
+    {
+        "questionText": ["Where should I go too meet new people online", "How can I meet new people online", "Where should I start meeting people online", "Is there a good app to meet nice people"],
+        "answerText": ["incomplete"],
+        "intent": "online friends"
     },
 
     {
