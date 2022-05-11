@@ -1,13 +1,25 @@
 {"data":[
     {
-        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi"],
+        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up"],
         "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?"],
         "intent": "greetings"
     },
 
     {
-        "questionText": ["Goodybye", "Seeya", "Bye", "Later"],
-        "answerText": ["I'm going now, bye", "Bye", "Goodbye", "Later"],
+        "questionText": ["My day was pretty good today!", "I had a good day today", "Doing good", "Great"],
+        "answerText": ["That's good to here", "That's great!"],
+        "intent": "feeling good"
+    },
+
+    {
+        "questionText": ["I had a bad day", "Not good", "Pretty bad"], 
+        "answerText": ["What's wrong?", "What's going on?"], 
+        "intent": "feeling bad"
+    },
+
+    {
+        "questionText": ["Goodybye", "Seeya", "Bye", "Later", "I'm going now", "I got to go", "Leaving now"],
+        "answerText": ["I'll see you", "Bye", "Goodbye", "Later"],
         "intent": "goodbyes"
     }
 ]}
