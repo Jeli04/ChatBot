@@ -200,3 +200,30 @@ body{
     background: none;
 }
 
+
+
+/* MESSAGES */
+.chatbox_messages {
+    top: 120px;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 100%;
+}
+
+.message_item {
+    max-width: 100%;
+    width: fit-content;
+}
+
+.messages_item--operator {
+    margin-left: auto;
+    background-image: url("/static/images/sibyl_message_bubble.png");
+}
+
+.messages_item--visitor {
+    margin-right: auto;
+    background-image: url("/static/images/user_message_bubble.png");
+
+}

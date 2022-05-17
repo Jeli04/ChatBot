@@ -13,6 +13,7 @@ def index_get():
 @app.post("/predict")
 def predict():
     text = request.get_json().get("message")
+    print("predict text: ", text)
     response = chatbot_response(text)
     message = {"answer": response}
     return jsonify(message)

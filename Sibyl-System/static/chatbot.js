@@ -1,40 +1,42 @@
 class Chatbox{
     constructor() {
         this.args = {
-            textBox: document.querySelector('.text_box'),
+            chatBox: document.querySelector('.chatbox_frame'),
             sendMessage: document.querySelector('.send_button')
         }
 
-        this.message = [];
+        this.messages = [];
     }
 
     display() {
-        const {textBox, sendMessage} = this.args;
+        const {chatBox, sendMessage} = this.args;
+        var console = window.console;
 
-        sendMessage.addEventListener('click', () => this.onSendButton(textBox)) // Checks if the send button is clicked
+        sendMessage.addEventListener('click', () => this.onSendButton(chatBox)) // Checks if the send button is clicked
 
-        const node = textBox.querySelector('input');
+        const node = chatBox.querySelector('input');
         node.addEventListener("keyup", ({key}) => {
-            if (key == "Enter"){
-                this.onSendButton(textBox)
+            if (key === "Enter"){
+                this.onSendButton(chatBox)
             }
         })
 
     }
 
-    onSendButton() {
-        var textField = textBox.querySelector('input');
+    onSendButton(chatbox) {
+        var textField = chatbox.querySelector('input');
         let text1 = textField.value
         if(text1 === "") {
             return;
         }
 
-        let msg1 = {name: "User", messgae: text1}
-        this.messages.push(msg1)
+        let msg1 = { name: "User", message: text1 }
+        this.messages.push(msg1);
 
-        fetch($SCRIPT_ROOT + '/predict', {
+        // Not giving a string?
+        fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
-            body: JSON.stringify({messgae: text1}),
+            body: JSON.stringify({message: text1}),
             mode: 'cors',
             headers: {
                 'Content-Type': 'application/json'            
@@ -48,18 +50,27 @@ class Chatbox{
             textField.value = ''
         }).catch((error) => {
             console.error('Error:', error);
-            this.updateChatText(textBox)
+            this.updateChatText(chatbox)
             textField.value = ''
         });
     }
 
-    updateChatText(textBox){
+    updateChatText(chatbox){
         var html = '';
-        this.message.slice().reverse().forEach(function(item, index) {
+        this.messages.slice().reverse().forEach(function(item, index) {
             if(item.name === "Sibyl"){
-                // continue from here
+                html += '<div class="message_item messages_item--visitor">' + item.message + '</div>'
             }
-        })    
+            else{
+                html += '<div class="message_item messages_item--operator">' + item.message + '</div>'
+            }
+        });
+        
+        const chatmessage = chatbox.querySelector('.chatbox_messages');
+        chatmessage.innerHTML = html;
     }
 
 }
+
+const chatbox = new Chatbox();
+chatbox.display();

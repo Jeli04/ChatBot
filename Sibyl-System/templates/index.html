@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <!-- may need the forwardslash in line 6 at the end of the tag -->
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0" charset="UTF-8">
         <title>Project Sibyl</title>
         <link rel="shortcut icon" type="image/jpg" href="{{ url_for('static', filename='images\Sibyl_System.jpg')}}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index-styles.css')}}">
@@ -60,6 +60,9 @@
                 <!--insert chatbot here-->
                 <div class = "chatbot">
                   <div class = "chatbox_frame">
+                    <div class = "chatbox_messages">
+                      <div></div>
+                    </div>
                     <input class = "text_box" type="text" placeholder="Write a Message">
                     <button class="send_button"><img src = "{{ url_for('static', filename='images/send_button.png')}}" alt = "button_img"></button>
                   </div>
@@ -75,13 +78,16 @@
 
         </section>
         
-    
+        <!--
         <script>
-          $SCRIPT_ROOT = {{ request.script_root|tojson }};
+          $SCRIPT_ROOT = {{ request.script_root|tojson}};
         </script>
+        
         <script type="text/javascript" src="{{ url_for('static', filename='chatbot.js') }}"></script>
-    </body>
+        -->
+        <script src="/static/chatbot.js"></script>
 
+      </body>
 
 </html>
 

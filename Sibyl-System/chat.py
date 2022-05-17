@@ -21,6 +21,7 @@ classes = pickle.load(open('Chatbot\classes.pkl','rb'))
 
 # Cleans up the users response 
 def clean_up_sentences(sentence):
+  #print(sentence)
   sentence_words = nltk.word_tokenize(sentence)
   sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
   return sentence_words
@@ -50,12 +51,12 @@ def predict_class(sentence, model):
   p = bow(sentence, words, show_details=False)
   result = model.predict(np.array([p]))[0]  # Uses the ML model to predict the intent classification results 
   ERROR_THRESHOLD = 0.75  # Threshold to prevent overfitting 
-  print("Model Prediction:", result)
+  #print("Model Prediction:", result)
 
   
   results = [[i,r] for i,r in enumerate(result) if r>ERROR_THRESHOLD]
   
-  print("test: ", results[0][1])
+  #print("test: ", results[0][1])
 
   results.sort(key=lambda x: x[1], reverse=True)
   return_list = []
@@ -69,6 +70,7 @@ def predict_class(sentence, model):
 
 
 def getResponse(ints, intents_json):
+    print(ints[0])
     intent = ints[0]["intent"]
     list_of_intents = intents_json['data']
     for i in list_of_intents:
@@ -81,9 +83,9 @@ def getResponse(ints, intents_json):
 
 
 def chatbot_response(msg):
+  #print(msg)
   ints = predict_class(msg, model)
   res = getResponse(ints, training)
-  print("test")
   return res
 
 print(chatbot_response("I am depressed"))
