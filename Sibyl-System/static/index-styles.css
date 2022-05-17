@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(100, 5, 87, 0.7)),url("/static/images/aiwallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(180, 179, 179, 0.3);
+}
+
+.navbar{
+    padding: 0 !important;
+    
+}
+
+.navbar-brand img{
+    height: 90px;
+    
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+    
+
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+}
+
+
+
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+.text-box{
+    text-align: center;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 100ms ease-in;
+
+}
+.navbar ul li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 200ms ease-out;
+
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 13px;
+}
+
+.buttonOne{
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    outline: 3px solid #30026b;
+}
+
+
+.buttonOne:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.buttonOne:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #30026b ;
+}
+
+.buttonOne:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.buttonTwo{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    outline: 3px solid #30026b;
+}
+
+
+.buttonTwo:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.buttonTwo:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #30026b ;
+}
+
+/* I can change button color later if needed */
+
+.buttonTwo:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/* CHATBOT CSS */
+
+.chatbox_frame {
+    position: relative;
+    margin: auto;
+    height: 590px;
+    width: 722px;
+    background-image: url("/static/images/chatbox_frame.png");
+}
+
+.text_box {
+    position: absolute;
+    bottom: 30px;
+    right: 200px;
+    height: 53px;
+    width: 455px;
+    border: none;
+    background: none;
+    background-image: url("/static/images/text_box.png");
+
+}
+
+.send_button {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    border: none;
+    background: none;
+}
+
+
+
+/* MESSAGES */
+.chatbox_messages {
+    top: 120px;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 100%;
+}
+
+.message_item {
+    max-width: 100%;
+    width: fit-content;
+}
+
+.messages_item--operator {
+    margin-left: auto;
+    background-image: url("/static/images/sibyl_message_bubble.png");
+}
+
+.messages_item--visitor {
+    margin-right: auto;
+    background-image: url("/static/images/user_message_bubble.png");
+
+}
