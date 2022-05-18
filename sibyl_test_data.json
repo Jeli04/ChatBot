@@ -1,7 +1,7 @@
 {"data":[
     {
-        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up", "Hey"],
-        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?", "Hey"],
+        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up", "Hey", "Yo"],
+        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?", "Hey", "Yo"],
         "intent": "greetings"
     },
 
@@ -13,7 +13,7 @@
 
     {
         "questionText": ["My day was pretty good today!", "I had a good day today", "Doing good", "Great", "Good", "Pretty great"],
-        "answerText": ["That's good to here", "That's great!"],
+        "answerText": ["That's good to hear", "That's great!"],
         "intent": "feeling good"
     },
 
@@ -57,6 +57,47 @@
         "questionText": ["Where should I go too meet new people online", "How can I meet new people online", "Where should I start meeting people online", "Is there a good app to meet nice people"],
         "answerText": ["incomplete"],
         "intent": "online friends"
+    },
+    
+    {
+        "questionText": ["I'm hungry", "What's your favorite food?", "What food do you like?", "Pretty hungry what do you think I should eat?"], 
+        "answerText": ["My favorite food is pizza! You should try it too"],
+        "intent": "food"
+    },
+
+    {
+        "questionText": ["What show should I watch?","I like watching TV shows","I like watching TV", "What is your favorite TV show?"], 
+        "answerText": ["My favorite TV show is The Office, you should watch it too! It's very funny!"],
+        "intent": "TV shows"
+    },
+
+    {
+        "questionText": ["What movie should I watch?","I like watching movies", "What should I watch?", "What's your favorite movie?", "What movie do you like?"], 
+        "answerText": ["My favorite movie is Interstellar, you should watch it too! It's very cool!"],
+        "intent": "Movies"
+    },
+    {
+        "questionText": [ "Do you like music", "Do you listen to music", "Whats your favorite music genre" ],
+        "answerText": [ "Yes, I love listening to music", "Bruno Mars is the best!", "Music makes me happy!" ],
+        "intent": "music"
+    },
+
+    {
+        "questionText": [ "Whos your favorite artist", "Who do you listen to", "Which artists do you like" ],
+        "answerText": [ "Any artist is awesome!", "I dont discriminate!" ],
+        "intent": "artist"
+    },
+
+    {
+        "questionText": [ "Whats your name", "Who are you", "Do I know you" ],
+        "answerText": [ "My name is Sibyl!", "I am Sibyl!" ],
+        "intent": "you"
+    },
+
+    {
+        "questionText": [ "What's your favorite sport", "Do you play a sport", "Which sport do you watch", "Do you like any sports?"],
+        "answerText": [ "Soccer is my happiness!", "I love soccer!" ],
+        "intent": "sport"
     },
 
     {
