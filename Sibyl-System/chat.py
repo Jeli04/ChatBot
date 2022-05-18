@@ -8,7 +8,7 @@ import numpy as np
 import urllib
 
 from keras.models import load_model
-model = load_model('Chatbot\chatbot_model_test.h5')
+model = load_model('Chatbot\chatbot_model_test2.h5')
 import json
 import random
 with urllib.request.urlopen("https://raw.githubusercontent.com/Jeli04/ChatBot/main/sibyl_test_data.json") as url:

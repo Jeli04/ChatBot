@@ -32,13 +32,13 @@
                             <a class="nav-link" aria-current="page" href="{{ url_for('index_get')}}">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="sad.html">About S.A.D.</a>
+                            <a class="nav-link" href="{{ url_for('sad_get')}}">About S.A.D.</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">About Sibyl</a>
+                            <a class="nav-link" href="{{ url_for('about_sibyl_get')}}">About Sibyl</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Forum</a>
+                            <a class="nav-link" href="{{ url_for('forum_get')}}">Forum</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -53,7 +53,8 @@
     
             </section>
 
-                <div class="text-box">
+                
+                <div class = "text-box">
                     <h1>Say Hello To Sibyl</h1>
                 </div> 
 
@@ -72,7 +73,7 @@
 
                 <div class="button-group">
                   <button class="buttonOne" href="#">Read about Sibyl!</button>
-                  <button class="buttonTwo" href="#">Share your experience on the Forums</button>
+                  <button class="buttonTwo" href="#">Share on the Forums!</button>
                 </div>
 
 

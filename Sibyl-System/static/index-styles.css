@@ -2,66 +2,66 @@
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-}
-
-
-.header{
+   }
+   
+   
+   .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(100, 5, 87, 0.7)),url("/static/images/aiwallpaper.jpg");
+    background-image: linear-gradient(rgba(44, 105, 161, 0.4),rgba(44, 105, 161, 0.9)),url("/static/images/aiwallpaper.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
-}
-
-body{
+   }
+   
+   body{
     font-family: 'Oswald', sans-serif;
-}
-
-#navbar{
+   }
+   
+   #navbar{
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(180, 179, 179, 0.3);
-}
-
-.navbar{
+    /*background: rgba(180, 179, 179, 0.3);*/
+   }
+   
+   .navbar{
     padding: 0 !important;
     
-}
-
-.navbar-brand img{
+   }
+   
+   .navbar-brand img{
     height: 90px;
     
-}
-
-.navbar-nav li{
+   }
+   
+   .navbar-nav li{
     padding: 0 10px;
     
-
-}
-
-.navbar-nav li a{
+   
+   }
+   
+   .navbar-nav li a{
     color: #fff !important;
-}
-
-
-
-.fa-bars{
+   }
+   
+   
+   
+   .fa-bars{
     color: #fff;
     font-size: 30px !important;
-}
-
-.navbar-toggler{
+   }
+   
+   .navbar-toggler{
     outline: none !important;
-}
-
-.text-box{
+   }
+   
+   .text-box{
     text-align: center;
     color: #fff;
-}
-
-.navbar ul li::after{
+   }
+   
+   .navbar ul li::after{
     content: '';
     width: 100%;
     height: 2px;
@@ -70,26 +70,26 @@ body{
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 100ms ease-in;
-
-}
-.navbar ul li:hover::after{
+   
+   }
+   .navbar ul li:hover::after{
     transform: scaleX(1);
     transform-origin: left;
     transition: transform 200ms ease-out;
-
-}
-
-.button-group{
+   
+   }
+   
+   .button-group{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     text-align: center;
     min-height: 100vh;
     font-size: 13px;
-}
-
-.buttonOne{
+    margin-top: 150px;
+   }
+   
+   .buttonOne{
     width: 150px;
     height: 50px;
     border: none;
@@ -99,16 +99,16 @@ body{
     position: relative;
     background-color: transparent;
     z-index: 1;
-    outline: 3px solid #30026b;
-}
-
-
-.buttonOne:hover{
+    outline: 3px solid #CDB4DB;
+   }
+   
+   
+   .buttonOne:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
-}
-
-.buttonOne:before{
+   }
+   
+   .buttonOne:before{
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -117,19 +117,19 @@ body{
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #30026b ;
-}
-
-.buttonOne:hover::before{
+    background-color: #CDB4DB ;
+   }
+   
+   .buttonOne:hover::before{
     transition: 0.5s all ease;
     left: 0;
     right: 0;
     opacity: 1;
     z-index: -1;
-}
-
-.buttonTwo{
-    width: 200px;
+   }
+   
+   .buttonTwo{
+    width: 150px;
     height: 50px;
     border: none;
     color: rgb(255, 255, 255);
@@ -138,16 +138,16 @@ body{
     position: relative;
     background-color: transparent;
     z-index: 1;
-    outline: 3px solid #30026b;
-}
-
-
-.buttonTwo:hover{
+    outline: 3px solid #CDB4DB;
+   }
+   
+   
+   .buttonTwo:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
-}
-
-.buttonTwo:before{
+   }
+   
+   .buttonTwo:before{
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -156,31 +156,33 @@ body{
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #30026b ;
-}
-
-/* I can change button color later if needed */
-
-.buttonTwo:hover::before{
+    background-color: #CDB4DB ;
+   }
+   
+   /* I can change button color later if needed */
+   
+   .buttonTwo:hover::before{
     transition: 0.5s all ease;
     left: 0;
     right: 0;
     opacity: 1;
     z-index: -1;
-}
-
-
-/* CHATBOT CSS */
-
-.chatbox_frame {
+   }
+   
+   
+   /* CHATBOT CSS */
+   
+   .chatbox_frame {
     position: relative;
     margin: auto;
+    top: 50px;
+    bottom: 75px;
     height: 590px;
     width: 722px;
     background-image: url("/static/images/chatbox_frame.png");
-}
-
-.text_box {
+   }
+   
+   .text_box {
     position: absolute;
     bottom: 30px;
     right: 200px;
@@ -189,41 +191,83 @@ body{
     border: none;
     background: none;
     background-image: url("/static/images/text_box.png");
-
-}
-
-.send_button {
+   
+   }
+   
+   .send_button {
     position: absolute;
     bottom: 20px;
     right: 25px;
     border: none;
     background: none;
-}
-
-
-
-/* MESSAGES */
-.chatbox_messages {
-    top: 120px;
+   }
+   
+   
+   
+   /* MESSAGES */
+   .chatbox_messages {
+    top: 112px;
     display: flex;
     overflow-y: scroll;
     flex-direction: column-reverse;
-    position: absolute;
-    width: 100%;
-}
+    position: relative;
+    width: 722px;
+    height: 366px;
+    background-image: url("/static/images/chatbox_messages.png");
+    padding: 2%;
+   }
 
-.message_item {
-    max-width: 100%;
+   
+   .message_item {
+    background-repeat: no-repeat;
+    background: #A2D2FF;
+    max-width: 60%;
     width: fit-content;
-}
-
-.messages_item--operator {
+    padding: 10px;
+    margin: 5px;
+   }
+   
+   .messages_item--operator {
     margin-left: auto;
-    background-image: url("/static/images/sibyl_message_bubble.png");
-}
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+   }
 
-.messages_item--visitor {
+   .messages_item--visitor {
     margin-right: auto;
-    background-image: url("/static/images/user_message_bubble.png");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
 
-}
+   input {
+       padding: 5px;
+   }
+
+
+   .typewriter {
+    width: max-content;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }

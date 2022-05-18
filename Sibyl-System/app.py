@@ -9,6 +9,19 @@ app = Flask(__name__)
 def index_get():
     return render_template("index.html")
 
+@app.get("/sad")
+def sad_get():
+    return render_template("sad.html")
+
+@app.get("/about")
+def about_sibyl_get():
+    return render_template("sibylinfo.html")
+
+@app.get("/forum")
+def forum_get():
+    return render_template("forum.html")
+
+
 
 @app.post("/predict")
 def predict():

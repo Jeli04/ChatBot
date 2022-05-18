@@ -8,7 +8,7 @@
 .header{
     min-height: 75vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(100, 5, 87, 0.7)),url(sad.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(100, 5, 87, 0.7)),url("images/sad.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -82,4 +82,10 @@ body{
 h1{
     text-align: center;
 
+}
+
+.partTwo{
+    background-image: url("images/sad_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
