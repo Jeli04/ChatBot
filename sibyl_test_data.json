@@ -89,12 +89,6 @@
     },
 
     {
-        "questionText": [ "Whats your name", "Who are you", "Do I know you" ],
-        "answerText": [ "My name is Sibyl!", "I am Sibyl!" ],
-        "intent": "you"
-    },
-
-    {
         "questionText": [ "What's your favorite sport", "Do you play a sport", "Which sport do you watch", "Do you like any sports?"],
         "answerText": [ "Soccer is my happiness!", "I love soccer!" ],
         "intent": "sport"
