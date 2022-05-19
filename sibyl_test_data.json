@@ -43,7 +43,7 @@
 
     {
         "questionText": ["I get nervous around people easily", "It's hard for me too make eye contact with people", "I get sweaty and nervous when talking to people"],
-        "answerText": ["incomplete"],
+        "answerText": ["Don't worry! Try controling your breathing and prepare yourself when you talk to someone."],
         "intent": "nervous"
     },
 
@@ -55,7 +55,7 @@
 
     {
         "questionText": ["Where should I go too meet new people online", "How can I meet new people online", "Where should I start meeting people online", "Is there a good app to meet nice people"],
-        "answerText": ["incomplete"],
+        "answerText": ["A good place to have fun and meet new people is Discord!"],
         "intent": "online friends"
     },
     
@@ -98,6 +98,30 @@
         "questionText": [ "What's your favorite sport", "Do you play a sport", "Which sport do you watch", "Do you like any sports?"],
         "answerText": [ "Soccer is my happiness!", "I love soccer!" ],
         "intent": "sport"
+    },
+    
+    {
+        "questionText": [ "Who created you", "who are your parents", "Who is your creator", "Who made you"],
+        "answerText": [ "My creator is Jerry Li" ],
+        "intent": "creator"
+    },
+    
+    {
+        "questionText": [ "What's your favorite basketball team", "Do you follow basketball", "Do you watch basketball", "Do you like basketball?"],
+        "answerText": [ "I love the Heat", "The Miami Heat are the greatest", "I love basketball and the Heat would destory the Cavaliers!!"],
+        "intent": "basketball"
+    },
+
+    {
+        "questionText": [ "What's your favorite soccer team", "Do you follow soccer", "Do you watch soccer", "Do you like soccer?"],
+        "answerText": [ "I love Cristiano Ronaldo" ],
+        "intent": "Soccer"
+    },
+    
+    {
+        "questionText": [ "Your mom", "ur mom", "I did your mom"],
+        "answerText": [ "Nice try Ravi, but soon you are going to have another sister." ],
+        "intent": "Ravi"
     },
 
     {
