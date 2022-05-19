@@ -171,8 +171,13 @@
    
    
    /* CHATBOT CSS */
-   
+   .chatbot{
+     
+     position: relative;
+   }
+
    .chatbox_frame {
+    z-index: 2;
     position: relative;
     margin: auto;
     top: 50px;
@@ -270,4 +275,54 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange }
+  }
+
+
+  .rgb::after{
+    content:"";
+    width: 730px;
+    height: 598px;
+    margin-top: 50px;
+    margin-left: 32.25%;
+    position: absolute;
+    background: linear-gradient(45deg,
+    #2474be 0%,
+    #639dd3 10%,
+    #8cbff0 20%,
+    #5dbaf0 30%,
+    #22AFFF 40%,
+    #FFC8DD 50%,
+    #ecadc5 60%,
+    #FFAFCC 70%,
+    #d7c3e2 80%,
+    #CDB4DB 90%,
+    #c186e4 100%
+
+
+
+    /*
+    #ff0000 0%, 
+    #ff9a00 10%,
+    #d0de21 20%,
+    #4fdc4a 30%, 
+    #3fdad8 40%,
+    #2fc9e2 50%, 
+    #1c7fee 60%, 
+    #5f15f2 70%, 
+    #ba0cf8 80%, 
+    #fb07d9 90%, 
+    #ff0000 100% 
+    */ )
+    repeat 0% 0% / 300% 100%;
+    inset: -3px;
+    border-radius: 25px;
+    filter: blur(8px);
+    z-index: 1;
+    animation: rgb 6s linear infinite;
+  }
+
+  @keyframes rgb {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
   }

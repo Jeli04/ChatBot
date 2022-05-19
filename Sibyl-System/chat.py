@@ -8,7 +8,7 @@ import numpy as np
 import urllib
 
 from keras.models import load_model
-model = load_model('Chatbot\chatbot_model_test2.h5')
+model = load_model('Chatbot\chatbot_model_test3.h5')
 import json
 import random
 with urllib.request.urlopen("https://raw.githubusercontent.com/Jeli04/ChatBot/main/sibyl_test_data.json") as url:
@@ -50,7 +50,7 @@ def bow(sentence, words, show_details = True):
 def predict_class(sentence, model):
   p = bow(sentence, words, show_details=False)
   result = model.predict(np.array([p]))[0]  # Uses the ML model to predict the intent classification results 
-  ERROR_THRESHOLD = 0.75  # Threshold to prevent overfitting 
+  ERROR_THRESHOLD = 0.00  # Threshold to prevent overfitting 
   #print("Model Prediction:", result)
 
   
@@ -85,7 +85,10 @@ def getResponse(ints, intents_json):
 def chatbot_response(msg):
   #print(msg)
   ints = predict_class(msg, model)
-  res = getResponse(ints, training)
-  return res
+  if float(ints[0]["probability"]) < 0.75:
+    return "Sorry I didn't quite get that"
+  else:
+    res = getResponse(ints, training)
+    return res
 
 print(chatbot_response("I am depressed"))
