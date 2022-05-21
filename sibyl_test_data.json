@@ -1,13 +1,13 @@
 {"data":[
     {
-        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up", "Hey", "Yo"],
-        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?", "Hey", "Yo"],
+        "questionText": ["Hello", "Good Morning", "Good Evening", "Good Afternoon", "Hi", "What's up", "Hey", "Yo", "Whats up", "Greetings"],
+        "answerText": ["Hello how are you?", "What's up", "How's your day", "What can I do for you?", "Hey"],
         "intent": "greetings"
     },
 
     {
         "questionText": ["What is your purpose?", "What do you do?", "Who are you", "What can you do?", "What are you?"],
-        "answerText": ["I am Sibyl, a chatbot created with the purpose to answer questions about Social Anxiety Disorder. I can also be something that you can talk too if you are struggling with anything, but I can't gaurantee my advice will help your situation specifcally."],
+        "answerText": ["I am Sibyl, a chatbot created with the purpose to answer questions about Social Anxiety Disorder. I can also be something that you can talk too if you are struggling with anything, but I can't gaurantee my advice will help your situation specifcally. Try asking me some fun questions as well! Hopefully I'll be able to understand, I am still learning!"],
         "intent": "purpose"
     },
 
@@ -25,7 +25,7 @@
 
     {
         "questionText": ["I'm feeling lonely", "I don't have anybody to talk with recently", "I don't know who to talk too"],
-        "answerText": ["If you are having trouble making freinds or talking with someone you can try meeting people online."],
+        "answerText": ["If you are having trouble making freinds or talking with someone you can try meeting people online.", "Try meeting people with similar interests as you. This is one of the best ways to make friends!"],
         "intent": "lonely"
     },
 
@@ -37,19 +37,43 @@
 
     {
         "questionText": ["I'm feeling depressed", "I feel my depression is at a all time low", "Kinda depressed"],
-        "answerText": ["If you haven't already you should try seeking professional help and talk with someone you feel comfortbale with.", "I don't know exactly what is going on in your life, but I think its good too express your feelings to someone."],
+        "answerText": ["If you haven't already you should try seeking professional help and talk with someone you feel comfortable with.", "I don't know exactly what is going on in your life, but I think its good too express your feelings to someone. You should try talking with a real therapist if you haven't already."],
         "intent": "depression"
+    },
+    
+    {
+        "questionText": ["I feel sad", "Sad", "I am sad"],
+        "answerText": ["What's going on?",  "I can try helping, what's wrong?"],
+        "intent": "sad"
+    },
+    
+    {
+        "questionText": ["I feel embarrassed", "I always feel embarrassed when I do something around other people"],
+        "answerText": ["Don't worry! Try remembering that people won't always look down on you for something small. Put yourself in their shoes and imagine yourself in their situation", "Try challenging these embrrassing thoughts and replace them with realistic thinking!"],
+        "intent": "embarrassment"
     },
 
     {
         "questionText": ["I get nervous around people easily", "It's hard for me too make eye contact with people", "I get sweaty and nervous when talking to people"],
-        "answerText": ["Don't worry! Try controling your breathing and prepare yourself when you talk to someone."],
+        "answerText": ["Don't worry! Try controling your breathing and prepare yourself when you talk to someone.", "Try finding out what specific things cause your nervousneous or anxiety. This can put you on the right direction to power through these nervous feelings."],
         "intent": "nervous"
+    },
+    
+    {
+        "questionText": ["I have trouble starting a conversation", "It's hard for me to talk with other people", "I don't like talking with people"],
+        "answerText": ["Try taking small steps into making yourself more comfortable in these types of situations. This can be as simple as skipping the self-checkout and make small talk with the cashier isntead."],
+        "intent": "talking"
+    },
+    
+    {
+        "questionText": ["I'm being abused at home", "My parents keep hitting me", "I am being abused"],
+        "answerText": ["You should immediately talk with a trusted adult and call child protective services. The number is 1.800. 422.4453. Don't hestitate to get the help you need!"],
+        "intent": "abuse"
     },
 
     {
         "questionText": ["I need help making friends", "How should I talk to people?"],
-        "answerText": ["Talking with people for the first time can be hard, but you should try "],
+        "answerText": ["Talking with people for the first time can be hard, but you should try finding people with similar interests as you."],
         "intent": "making friends"
     },
 
@@ -116,6 +140,18 @@
         "questionText": [ "Your mom", "ur mom", "I did your mom"],
         "answerText": [ "Nice try Ravi, but soon you are going to have another sister." ],
         "intent": "Ravi"
+    },
+    
+    {
+        "questionText": ["Thanks for the advice", "Thank you", "Thanks"],
+        "answerText": ["No problem, anything else I can do for you?"],
+        "intent": "Thanks"
+    },
+    
+    {
+        "questionText": ["No", "Nope", "Nothing else",
+        "answerText": ["Alright"],
+        "intent": "No"
     },
 
     {
