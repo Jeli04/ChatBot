@@ -149,7 +149,7 @@
     },
     
     {
-        "questionText": ["No", "Nope", "Nothing else",
+        "questionText": ["No", "Nope", "Nothing else"],
         "answerText": ["Alright"],
         "intent": "No"
     },
