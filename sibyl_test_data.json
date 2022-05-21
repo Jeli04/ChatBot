@@ -155,7 +155,7 @@
     },
 
     {
-        "questionText": ["Goodybye", "Seeya", "Bye", "Later", "I'm going now", "I got to go", "Leaving now"],
+        "questionText": ["Goodbye", "Seeya", "Bye", "Later", "I'm going now", "I got to go", "Leaving now"],
         "answerText": ["I'll see you", "Bye", "Goodbye", "Later"],
         "intent": "goodbyes"
     }
