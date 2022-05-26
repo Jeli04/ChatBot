@@ -22,6 +22,12 @@
         "answerText": ["What's wrong?", "What's going on?"],
         "intent": "feeling bad"
     },
+    
+    {
+        "questionText": ["What is social anxiety disorder", "can you explain social anxiety disorder"],
+        "answerText": ["Social anxiety disorder is a chronic mental health condition where the person feels extreme anxiety, fear, or nervousness in everyday social interations. You can visit the S.A.D page of our website to learn more!"],
+        "intent": "social anxiety definition"
+    },
 
     {
         "questionText": ["I'm feeling lonely", "I don't have anybody to talk with recently", "I don't know who to talk too"],
@@ -137,9 +143,9 @@
     },
     
     {
-        "questionText": [],
-        "answerText": [],
-        "intent": " "
+        "questionText": ["I want to kill myself", "I want to shoot myself", "I am suidical", "I am pointing a gun at myself"],
+        "answerText": ["Please calm down and do not hurt yourself. I don't know what you are going through or if I can even help but just know that there is help for you. Please call 800-273-8255 right now and talk to someone who can help you."],
+        "intent": "suicide"
     },
     
     {
