@@ -137,9 +137,15 @@
     },
     
     {
+        "questionText": [],
+        "answerText": [],
+        "intent": " "
+    },
+    
+    {
         "questionText": [ "Your mom", "ur mom", "I did your mom"],
-        "answerText": [ "Nice try Ravi, but soon you are going to have another sister." ],
-        "intent": "Ravi"
+        "answerText": [ "Nice try, but soon you are going to have another sister." ],
+        "intent": "your mom"
     },
     
     {
